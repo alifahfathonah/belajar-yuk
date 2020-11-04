@@ -6,9 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?= $title ?></title>
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.0/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.0.5/dist/css/adminlte.min.css">
     <!-- My Style Css -->
     <link rel="stylesheet" href="/css/my-all-style.css">
     <!-- Google Font: Source Sans Pro -->
@@ -44,25 +44,15 @@
     <!-- ./wrapper -->
     
     <!-- jQuery -->
-    <script src="/adminlte/plugins/jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- overlayScrollbars -->
-    <script src="/adminlte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.0/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/adminlte/dist/js/adminlte.js"></script>
-    <!-- OPTIONAL SCRIPTS -->
-    <script src="/adminlte/dist/js/demo.js"></script>
-    <!-- PAGE PLUGINS -->
-    <!-- jQuery Mapael -->
-    <script src="/adminlte/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
-    <script src="/adminlte/plugins/raphael/raphael.min.js"></script>
-    <script src="/adminlte/plugins/jquery-mapael/jquery.mapael.min.js"></script>
-    <script src="/adminlte/plugins/jquery-mapael/maps/usa_states.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.0.5/dist/js/adminlte.js"></script>
     <!-- ChartJS -->
-    <script src="/adminlte/plugins/chart.js/Chart.min.js"></script>
-    <!-- PAGE SCRIPTS -->
-    <script src="/adminlte/dist/js/pages/dashboard2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs@0.3.24/chart.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/70351a3d8c.js" crossorigin="anonymous"></script>
     <!-- Eruda -->
