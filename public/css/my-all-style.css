@@ -1,0 +1,17 @@
+/* ============================================================================================================================ */
+section.content {
+  min-height: 100vh;
+}
+
+.main-sidebar .image-belajar-yuk {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+footer.main-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
