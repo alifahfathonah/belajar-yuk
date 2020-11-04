@@ -99,16 +99,6 @@ _modules/*
 .idea/
 *.iml
 
-# Netbeans
-nbproject/
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-nb-configuration.xml
-.nb-gradle/
-
 # Sublime Text
 *.tmlanguage.cache
 *.tmPreferences.cache
@@ -124,6 +114,43 @@ nb-configuration.xml
 /results/
 /phpunit*.xml
 /.phpunit.*.cache
+
+# admin lte
+# // System / Log files 
+*.DS_Store
+*.log
+
+# // Archives
+*.zip
+
+# // Sass Cache
+.sass-cache
+
+# // Project files
+.idea
+nbproject/private
+.vs/
+
+# // Node / Bower
+node_modules/
+bower_components/
+
+# // Plugins
+/plugins/*/*.md
+/plugins/*/*.html
+/plugins/*/package.json
+
+# // Docs
+Gemfile.lock
+docs/_site
+docs_html/
+.jekyll-cache/
+.jekyll-metadata
+
+# // ETC
+TODO
+test.html
+ad.js
 
 nova
 nova.pub
