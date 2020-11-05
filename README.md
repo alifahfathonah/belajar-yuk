@@ -18,7 +18,7 @@ with the various features and conveniences that <b>Belajar Yuk</b> give you, it 
 
 ### Environment
 <ul>
-  <li><a href="https://codeigniter.com/">Codeigniter</a></li>
+  <li><a href="https://codeigniter.com/">Codeigniter 4</a></li>
 </ul>
 
 ### Contributing
@@ -26,7 +26,7 @@ You can contribute to this site by submitting pull request.
 
 ### Status
 <p>
-  <img src="https://img.shields.io/badge/Stages-production-informational">
+  <img src="https://img.shields.io/badge/Stages-development-informational">
   <a href="https://github.com/novaardiansyah1/belajar-yuk/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-informational">
   </a>
