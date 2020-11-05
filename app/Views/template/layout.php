@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.0/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.0.5/dist/css/adminlte.min.css">
+    <!-- DataTables -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
     <!-- My Style Css -->
-    <link rel="stylesheet" href="/css/my-all-style.css">
+    <link rel="stylesheet" href="/css/all-style.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <!-- Embed Style -->
@@ -57,9 +60,14 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.bundle.min.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/70351a3d8c.js" crossorigin="anonymous"></script>
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
     <!-- Eruda -->
     <script src="https://cdn.jsdelivr.net/npm/eruda@2.4.1/eruda.js"></script>
     <script>eruda.init()</script>
+    <!-- All Script -->
+    <script src="/js/all-script"></script>
     <!-- Embed Script -->
     <?= $this->renderSection('script') ?>
   </body>

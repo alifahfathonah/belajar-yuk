@@ -12,10 +12,18 @@
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
-          <a href="pages/gallery.html" class="nav-link <?= $menu === 'Dashboard' ? 'active' : '' ?>">
+          <a href="/" class="nav-link <?= $menu === 'dashboard' ? 'active' : '' ?>">
             <i class="nav-icon fa fa-fw fa-tachometer-alt align-middle"></i>
             <p>
               Dashboard
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/admin/siswa" class="nav-link <?= $menu === 'data siswa' ? 'active' : '' ?>">
+            <i class="nav-icon fa fa-fw fa-users align-middle"></i>
+            <p>
+              Data Siswa
             </p>
           </a>
         </li>
