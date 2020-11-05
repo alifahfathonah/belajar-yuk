@@ -67,7 +67,7 @@
     <script src="https://cdn.jsdelivr.net/npm/eruda@2.4.1/eruda.js"></script>
     <script>eruda.init()</script>
     <!-- All Script -->
-    <script src="/js/all-script"></script>
+    <script src="/js/all-script.js"></script>
     <!-- Embed Script -->
     <?= $this->renderSection('script') ?>
   </body>
