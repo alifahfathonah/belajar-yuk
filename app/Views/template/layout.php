@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/css/my-all-style.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Embed Style -->
+    <?= $this->renderSection('style') ?>
   </head>
   <body class="hold-transition sidebar-collapse layout-navbar-fixed layout-fixed">
     <div class="wrapper">
@@ -52,11 +54,13 @@
     <!-- AdminLTE App -->
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.0.5/dist/js/adminlte.js"></script>
     <!-- ChartJS -->
-    <script src="https://cdn.jsdelivr.net/npm/chartjs@0.3.24/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.bundle.min.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/70351a3d8c.js" crossorigin="anonymous"></script>
     <!-- Eruda -->
     <script src="https://cdn.jsdelivr.net/npm/eruda@2.4.1/eruda.js"></script>
     <script>eruda.init()</script>
+    <!-- Embed Script -->
+    <?= $this->renderSection('script') ?>
   </body>
 </html>

@@ -5,7 +5,7 @@ class Home extends BaseController
 	public function index()
 	{
 	  $data = [
-      'title' => 'welcome to belajar yuk',
+      'title' => 'selamat datang di BelajarYuk',
       'menu'  => 'Dashboard'
 	  ];
 		return view('home/index', $data);

@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+<div class="content-wrapper pb-4">
   <!-- Content Header (Page header) -->
   <div class="content-header">
     <div class="container-fluid">
@@ -26,7 +26,7 @@
   <!-- /.content-header -->
   
   <!-- Main content -->
-  <section class="content">
+  <section class="content pb-5">
     <div class="container-fluid">
       <!-- Info boxes -->
       <div class="row">
@@ -90,10 +90,24 @@
         <!-- /.col -->
       </div>
       <!-- /.row -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="top-5-student-chart" height="200"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
     </div>
     <!--/. container-fluid -->
   </section>
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+<?= $this->endSection() ?>
+
+<?= $this->section('script') ?>
+<script src="/js/home/index.js"></script>
 <?= $this->endSection() ?>
