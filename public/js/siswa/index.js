@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $('.container-fluid').on('click','#btn-create_siswa',(e) => {
+  // Modal Create Siswa
+  $('.container-fluid').on('click','#btn-create_siswa', (e) => {
     $('#staticModalLabel').html(`Tambah data siswa/i`);
     $('.modal-body').html(`
       <form action="/admin/siswa/create" method="post" id="form-create_siswa">
@@ -58,10 +59,14 @@ $(document).ready(function() {
       </form>
     `);
     
-    $('#staticModal').modal({
-      keyboard: false,
-      backdrop: 'static'
-    });
+    $('#staticModal').modal({ keyboard: false, backdrop: 'static' });
+  });
+  
+  // Modal Detail Siswa
+  $('.container-fluid').on('click','.btn-detail_siswa', (e) => {
+    $('#staticModalLabel').html(`detail data siswa/i`)
+    
+    $('#staticModal').modal({ keyboard: false, backdrop: 'static' });
   });
   
   $('.container-fluid').on('click','.btn-close_modal', (e) => {
