@@ -134,6 +134,17 @@
                 </li>
                 <!-- /.list-group-item -->
               </ul>
+              
+              <div class="text-right mt-3">
+                <button class="btn bg-navy">
+                  <i class="fa fa-fw fa-edit"></i>
+                  edit
+                </button>
+                <button class="btn btn-danger">
+                  <i class="fa fa-fw fa-trash-alt"></i>
+                  hapus
+                </button>
+              </div>
             </div>
             <!-- /.modal-body -->
           </div>
