@@ -2,7 +2,90 @@ $(document).ready(function() {
   // Modal Create Siswa
   $('.container-fluid').on('click','#btn-create_siswa', (e) => {
     $('#staticModalLabel').html(`Tambah data siswa/i`);
-    // $('.modal-body').html();
+    $('.modal-body').html(`
+      <form action="/admin/siswa/create" method="post" id="form-create_siswa">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-user"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama_lengkap">
+        </div>
+        <!-- /.input-group -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-id-card"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="NIS/NISN" name="nis-nisn">
+        </div>
+        <!-- /.input-group -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-restroom"></i></span>
+          </div>
+          <select class="custom-select form-control" name="jenis_kelamin">
+            <option value="" selected>laki-laki</option>
+            <option value="">perempuan</option>
+          </select>
+        </div>
+        <!-- /.input-group -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-pen-alt"></i></span>
+          </div>
+          <select class="custom-select form-control" name="kelas">
+            <option selected>Kelas</option>
+            <option value="">X</option>
+            <option value="">XI</option>
+            <option value="">XII</option>
+          </select>
+        </div>
+        <!-- /.input-group -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-industry"></i></span>
+          </div>
+          <select class="custom-select form-control" name="jurusan">
+            <option selected>Jurusan</option>
+            <option value="">rekayasa perangkat lunak</option>
+            <option value="">teknik komputer dan jaringan</option>
+            <option value="">teknik kendaraan ringan</option>
+            <option value="">desain pemodelan</option>
+            <option value="">teknik pendingin dan tata udara</option>
+            <option value="">teknik jaringan tenaga listrik</option>
+            <option value="">bisnis konstruksi dan properti</option>
+          </select>
+        </div>
+        <!-- /.input-group -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-mobile-alt"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="No. HP" name="no_hp">
+        </div>
+        <!-- /.input-group -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-calendar-alt"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="Tempat, Tanggal Lahir" name="ttl">
+        </div>
+        <!-- /.input-group -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-address-card"></i></span>
+          </div>
+          <textarea class="form-control" rows="2" placeholder="Alamat Lengkap" name="alamat"></textarea>
+        </div>
+        <!-- /.input-group -->
+        
+        <div class="text-right">
+          <button type="submit" class="btn bg-navy">
+            <i class="fa fa-fw fa-paper-plane align-middle"></i>
+            simpan
+          </button>
+        </div>
+      </form>
+    `);
     
     $('#staticModal').modal({ keyboard: false, backdrop: 'static' });
   });
