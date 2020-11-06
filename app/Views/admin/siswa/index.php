@@ -76,6 +76,25 @@
           
         </div>
         <!-- /.col-md-6 -->
+        
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header bg-navy">
+              <h3 class="card-title">statistik data siswa/i</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+              </div>
+            </div>
+            <div class="card-body">
+              <canvas id="chart-data_siswa" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+
+        </div>
+        <!-- .col-md-6 -->
       </div>
       <!-- /.row -->
       

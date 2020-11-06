@@ -143,6 +143,37 @@ $(document).ready(function() {
   $('.container-fluid').on('click','.btn-close_modal', (e) => {
     window.location.reload();
   });
+  
+  // Chart Data Siswa
+  let data_siswa = {
+    labels: [
+      'RPL', 
+      'DPIB',
+      'TKJ', 
+      'TKR', 
+      'Listrik', 
+      'AC',
+      'Pertanian'
+    ],
+    datasets: [
+      {
+        data: [125,100,79,90,80,65,95],
+        backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de','#c678db'],
+      }
+    ]
+  }
+  
+  let ctx = $('#chart-data_siswa').get(0).getContext('2d');
+  let pieOptions = {
+    maintainAspectRatio : false,
+    responsive : true,
+  }
+  
+  let pieChart = new Chart(ctx, {
+    type: 'pie',
+    data: data_siswa,
+    options: pieOptions      
+  });
 });
 
-// ---------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------
