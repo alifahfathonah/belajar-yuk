@@ -89,63 +89,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-5 text-nowrap text-right">Nama Lengkap:</div>
-                    <div class="col">Nova Ardiansyah</div>
-                  </div>
-                </li>
-                <!-- /.list-group-item -->
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-5 text-nowrap text-right">NIS/NISN:</div>
-                    <div class="col">103/RPL/2017</div>
-                  </div>
-                </li>
-                <!-- /.list-group-item -->
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-5 text-nowrap text-right">Jenis Kelamin:</div>
-                    <div class="col">Laki-Laki</div>
-                  </div>
-                </li>
-                <!-- /.list-group-item -->
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-5 text-nowrap text-right">No. Hp:</div>
-                    <div class="col">0895 0666 8480</div>
-                  </div>
-                </li>
-                <!-- /.list-group-item -->
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-5 text-nowrap text-right">TTL:</div>
-                    <div class="col">Tangerang, 11 november 2001</div>
-                  </div>
-                </li>
-                <!-- /.list-group-item -->
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-5 text-nowrap text-right">Alamat:</div>
-                    <div class="col">LK III Simbarwaringin, Kec. Trimurjo, Kab. LamTeng</div>
-                  </div>
-                </li>
-                <!-- /.list-group-item -->
-              </ul>
-              
-              <div class="text-right mt-3">
-                <button class="btn bg-navy">
-                  <i class="fa fa-fw fa-edit"></i>
-                  edit
-                </button>
-                <button class="btn btn-danger">
-                  <i class="fa fa-fw fa-trash-alt"></i>
-                  hapus
-                </button>
-              </div>
-            </div>
+            <div class="modal-body"></div>
             <!-- /.modal-body -->
           </div>
         </div>
