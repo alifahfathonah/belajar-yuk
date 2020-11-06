@@ -85,6 +85,25 @@
         <!-- /.col-md-6 -->
       </div>
       <!-- /.row -->
+      
+      <!-- Static Modal -->
+      <div class="modal fade" id="staticModal" tabindex="-1" aria-labelledby="staticModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header bg-indigo">
+              <h5 class="modal-title" id="staticModalLabel"></h5>
+              <button type="button" class="close text-white btn-close_modal" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <!-- /.modal-body -->
+          </div>
+        </div>
+      </div>
+      
     </div>
     <!--/. container-fluid -->
   </section>
@@ -92,77 +111,7 @@
 </div>
 <!-- /.content-wrapper -->
 
-<!-- Modal -->
-<!-- Create Siswa -->
-<div class="modal fade" id="createSiswaModal" tabindex="-1" aria-labelledby="createSiswaModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header bg-indigo">
-        <h5 class="modal-title" id="createSiswaModalLabel">Tambah data siswa/i</h5>
-        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form action="/admin/siswa/create" method="post" id="form-create_siswa">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fa fa-id-card"></i></span>
-            </div>
-            <input type="text" class="form-control" placeholder="NIS/NISN" name="nis-nisn">
-          </div>
-          <!-- /.input-group -->
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fa fa-fw fa-user"></i></span>
-            </div>
-            <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama_lengkap">
-          </div>
-          <!-- /.input-group -->
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fa fa-restroom"></i></span>
-            </div>
-            <select class="custom-select form-control" name="jenis_kelamin">
-              <option selected>Jenis Kelamin</option>
-              <option value="1">laki-laki</option>
-              <option value="2">perempuan</option>
-            </select>
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fa fa-fw fa-calendar-alt"></i></span>
-            </div>
-            <input type="text" class="form-control" placeholder="Tempat, Tanggal Lahir" name="ttl">
-          </div>
-          <!-- /.input-group -->
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fa fa-fw fa-address-card"></i></span>
-            </div>
-            <textarea class="form-control" rows="5" placeholder="Alamat Lengkap" name="alamat"></textarea>
-          </div>
-          <!-- /.input-group -->
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fa fa-fw fa-mobile-alt"></i></span>
-            </div>
-            <input type="text" class="form-control" placeholder="No. HP" name="no_hp">
-          </div>
-          <!-- /.input-group -->
-          
-          <div class="text-right">
-            <button type="submit" class="btn bg-navy">
-              <i class="fa fa-fw fa-paper-plane align-middle"></i>
-              simpan
-            </button>
-          </div>
-        </form>
-      </div>
-      <!-- /.modal-body -->
-    </div>
-  </div>
-</div>
+    
 
 <?= $this->endSection() ?>
 
