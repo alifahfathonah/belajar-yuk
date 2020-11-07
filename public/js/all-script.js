@@ -21,5 +21,32 @@ $(document).ready(function() {
   }
   
   // Select 2
-  if($('select')) { $('select').select2({ theme: 'bootstrap4' }) };
+  if($('select')) {
+    $('select').select2({ theme: 'bootstrap4' });
+  }
+  
+  // dateRangePicker
+  const dateRangePicker = (target = '.dateRangePicker') => {
+    // max age = 40 years old
+    // min age = 18 years old
+    let year    = new Date().getFullYear();
+    let minYear = parseInt(year - 40);
+    let maxYear = parseInt(year - 18);
+    
+    $(target).daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true,
+      minYear: minYear,
+      maxYear: maxYear,
+      opens: 'center',
+      drops: 'up',
+      locale: {
+        format: 'DD/MM/YYYY'
+      },
+    });
+  }
+  
+  if ($('.dateRangePicker')) {
+    dateRangePicker();
+  }
 });

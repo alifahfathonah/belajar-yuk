@@ -1,4 +1,24 @@
 $(document).ready(function() {
+  const dateRangePicker = (target = '.dateRangePicker') => {
+    // max age = 40 years old
+    // min age = 18 years old
+    let year    = new Date().getFullYear();
+    let minYear = parseInt(year - 40);
+    let maxYear = parseInt(year - 18);
+    
+    $(target).daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true,
+      minYear: minYear,
+      maxYear: maxYear,
+      opens: 'center',
+      drops: 'up',
+      locale: {
+        format: 'DD/MM/YYYY'
+      },
+    });
+  }
+  
   // Modal Create Siswa
   $('.container-fluid').on('click','#btn-create_siswa', (e) => {
     $('#staticModalLabel').html(`tambah data siswa/i`);
@@ -101,26 +121,7 @@ $(document).ready(function() {
     
     $('#staticModal').modal({ keyboard: false, backdrop: 'static' });
     $('select').select2({ theme: 'bootstrap4' });
-    
-    let year    = new Date().getFullYear();
-    let midYear = parseInt(year - 28);
-    
-    // max age = 40 years old
-    // min age = 18 years old
-    let minYear = parseInt(year - 40);
-    let maxYear = parseInt(year - 18);
-    
-    $('.dateRangePicker').daterangepicker({
-      singleDatePicker: true,
-      showDropdowns: true,
-      minYear: minYear,
-      maxYear: maxYear,
-      startDate: `11/11/${midYear}`,
-      opens: "center",
-      locale: {
-        format: 'DD/MM/YYYY'
-      },
-    });
+    dateRangePicker();
   });
   
   // Modal Detail Siswa
@@ -181,7 +182,7 @@ $(document).ready(function() {
         <li class="list-group-item">
           <div class="row">
             <div class="col-5 text-nowrap text-right">Tanggal Lahir:</div>
-            <div class="col">11 november 2001</div>
+            <div class="col">11/11/2001</div>
           </div>
         </li>
         <!-- /.list-group-item -->
@@ -283,7 +284,7 @@ $(document).ready(function() {
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-fw fa-calendar-alt"></i></span>
           </div>
-          <input type="text" class="form-control" value="11 november 2001" placeholder="Tanggal Lahir" name="tgl_lahir">
+          <input type="text" class="form-control dateRangePicker" value="11/11/2001" placeholder="Tanggal Lahir" name="tgl_lahir">
         </div>
         <!-- /.input-group -->
         <div class="input-group mb-3">
@@ -309,6 +310,7 @@ $(document).ready(function() {
     `);
     
     $('select').select2({ theme: 'bootstrap4' });
+    dateRangePicker();
   });
   
   $('.container-fluid').on('click','.btn-close_modal', (e) => {
