@@ -263,7 +263,7 @@ $(document).ready(function() {
       </form>
     `);
     
-    // $('#staticModal').modal({ keyboard: false, backdrop: 'static' });
+    $('select').select2({ theme: 'bootstrap4' });
   });
   
   // $('.container-fluid').on('click','.btn-close_modal', (e) => {
