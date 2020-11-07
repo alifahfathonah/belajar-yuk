@@ -19,9 +19,5 @@ $(document).ready(function() {
     });
   }
   
-  if($('select')) {
-    $('select').select2({
-      theme: 'bootstrap4',
-    });
-  }
+  if($('select')) { $('select').select2({ theme: 'bootstrap4' }) };
 });

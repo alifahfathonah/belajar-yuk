@@ -57,7 +57,7 @@
                       <td class="align-middle">103/RPL/2017</td>
                       <td class="align-middle">Laki-Laki</td>
                       <td class="text-nowrap align-middle">
-                        <button class="btn bg-indigo d-inline mb-2 btn-detail_siswa">
+                        <button class="btn bg-indigo d-inline btn-detail_siswa">
                           <i class="fa fa-fw fa-eye"></i>
                           detail
                         </button>
@@ -102,13 +102,15 @@
       <div class="modal fade" id="staticModal" tabindex="-1" aria-labelledby="staticModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
-            <div class="modal-header bg-indigo">
+            <div class="modal-header">
               <h5 class="modal-title" id="staticModalLabel"></h5>
               <button type="button" class="close text-white btn-close_modal" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body"></div>
+            <div class="modal-body">
+              ...
+            </div>
             <!-- /.modal-body -->
           </div>
         </div>
