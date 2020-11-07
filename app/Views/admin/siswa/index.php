@@ -104,7 +104,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="staticModalLabel"></h5>
-              <button type="button" class="close text-white btn-close_modal" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close text-white btn-close_modal">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>

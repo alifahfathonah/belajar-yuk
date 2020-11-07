@@ -2,7 +2,7 @@ $(document).ready(function() {
   // Modal Create Siswa
   $('.container-fluid').on('click','#btn-create_siswa', (e) => {
     $('#staticModalLabel').html(`tambah data siswa/i`);
-    $('.modal-header').addClass('.bg-indigo');
+    $('.modal-header').removeClass('bg-navy').addClass('bg-indigo');
     $('.modal-body').html(`
       <form action="/admin/siswa/create" method="post" id="form-create_siswa">
         <div class="input-group mb-3">
@@ -66,9 +66,16 @@ $(document).ready(function() {
         <!-- /.input-group -->
         <div class="input-group mb-3">
           <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-hospital"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="Tempat Lahir" name="tmp_lahir">
+        </div>
+        <!-- /.input-group -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-fw fa-calendar-alt"></i></span>
           </div>
-          <input type="text" class="form-control" placeholder="Tempat, Tanggal Lahir" name="ttl">
+          <input type="text" class="form-control" placeholder="Tanggal Lahir" name="tgl_lahir">
         </div>
         <!-- /.input-group -->
         <div class="input-group mb-3">
@@ -79,8 +86,12 @@ $(document).ready(function() {
         </div>
         <!-- /.input-group -->
         
-        <div class="text-right">
-          <button type="submit" class="btn bg-navy">
+        <div class="text-right text-nowrap">
+          <button type="button" class="btn text-navy d-inline btn-close_modal">
+            kembali
+          </button>
+          
+          <button type="submit" class="btn bg-navy d-inline">
             <i class="fa fa-fw fa-paper-plane align-middle"></i>
             simpan
           </button>
@@ -142,8 +153,15 @@ $(document).ready(function() {
         <!-- /.list-group-item -->
         <li class="list-group-item">
           <div class="row">
-            <div class="col-5 text-nowrap text-right">TTL:</div>
-            <div class="col">Tangerang, 11 november 2001</div>
+            <div class="col-5 text-nowrap text-right">Tempat Lahir:</div>
+            <div class="col">Tangerang</div>
+          </div>
+        </li>
+        <!-- /.list-group-item -->
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-5 text-nowrap text-right">Tanggal Lahir:</div>
+            <div class="col">11 november 2001</div>
           </div>
         </li>
         <!-- /.list-group-item -->
@@ -236,9 +254,16 @@ $(document).ready(function() {
         <!-- /.input-group -->
         <div class="input-group mb-3">
           <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-hospital"></i></span>
+          </div>
+          <input type="text" class="form-control" value="Tangerang" placeholder="Tempat Lahir" name="tmp_lahir">
+        </div>
+        <!-- /.input-group -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-fw fa-calendar-alt"></i></span>
           </div>
-          <input type="text" class="form-control" value="Tangerang, 11 november 2001" placeholder="Tempat, Tanggal Lahir" name="ttl">
+          <input type="text" class="form-control" value="11 november 2001" placeholder="Tanggal Lahir" name="tgl_lahir">
         </div>
         <!-- /.input-group -->
         <div class="input-group mb-3">
@@ -251,7 +276,7 @@ $(document).ready(function() {
         <!-- /.input-group -->
         
         <div class="text-right text-nowrap">
-          <button class="btn text-indigo d-inline btn-detail_siswa">
+          <button type="button" class="btn text-indigo d-inline btn-detail_siswa">
             kembali
           </button>
           
@@ -266,9 +291,10 @@ $(document).ready(function() {
     $('select').select2({ theme: 'bootstrap4' });
   });
   
-  // $('.container-fluid').on('click','.btn-close_modal', (e) => {
-  //   window.location.reload();
-  // });
+  $('.container-fluid').on('click','.btn-close_modal', (e) => {
+    $('#staticModal').modal('hide');
+    // window.location.reload();
+  });
   
   // Chart Data Siswa
   let data_siswa = {

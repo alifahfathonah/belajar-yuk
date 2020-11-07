@@ -8,7 +8,7 @@ class Home extends BaseController
       'title' => 'selamat datang di BelajarYuk',
       'menu'  => 'dashboard'
 	  ];
-		return view('home/index', $data);
+	  return view('home/index', $data);
 	}
 
 	// ---------------------------------------------------------------------------
