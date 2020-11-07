@@ -1,5 +1,6 @@
 $(document).ready(function() {
   
+  // Data Table
   let dataTable = $('#dataTable').html();
   
   if(dataTable) {
@@ -19,5 +20,6 @@ $(document).ready(function() {
     });
   }
   
+  // Select 2
   if($('select')) { $('select').select2({ theme: 'bootstrap4' }) };
 });

@@ -75,7 +75,7 @@ $(document).ready(function() {
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-fw fa-calendar-alt"></i></span>
           </div>
-          <input type="text" class="form-control" placeholder="Tanggal Lahir" name="tgl_lahir">
+          <input type="text" class="form-control dateRangePicker" placeholder="Tanggal Lahir" name="tgl_lahir">
         </div>
         <!-- /.input-group -->
         <div class="input-group mb-3">
@@ -101,6 +101,26 @@ $(document).ready(function() {
     
     $('#staticModal').modal({ keyboard: false, backdrop: 'static' });
     $('select').select2({ theme: 'bootstrap4' });
+    
+    let year    = new Date().getFullYear();
+    let midYear = parseInt(year - 28);
+    
+    // max age = 40 years old
+    // min age = 18 years old
+    let minYear = parseInt(year - 40);
+    let maxYear = parseInt(year - 18);
+    
+    $('.dateRangePicker').daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true,
+      minYear: minYear,
+      maxYear: maxYear,
+      startDate: `11/11/${midYear}`,
+      opens: "center",
+      locale: {
+        format: 'DD/MM/YYYY'
+      },
+    });
   });
   
   // Modal Detail Siswa
