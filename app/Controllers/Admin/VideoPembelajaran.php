@@ -2,17 +2,18 @@
 
 use App\Controllers\BaseController;
 
-class Siswa extends BaseController
+class VideoPembelajaran extends BaseController
 {
-  protected $menu = 'data siswa';
+  protected $menu = 'video pembelajaran';
   
 	public function index()
 	{
 	  $data = [
-      'title' => 'Data Siswa - BelajarYuk',
+      'title' => 'Video Pembelajaran - BelajarYuk',
       'menu'  => $this->menu
 	  ];
-		return view('admin/siswa/index', $data);
+	  
+		return view('admin/video-pembelajaran/index', $data);
 	}
 
 	// ---------------------------------------------------------------------------

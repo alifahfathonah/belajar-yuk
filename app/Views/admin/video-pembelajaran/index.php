@@ -8,13 +8,13 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0 text-dark">Data Siswa</h1>
+          <h1 class="m-0 text-dark">Video Pembelajaran</h1>
         </div>
         <!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="/admin/siswa">Siswa</a></li>
-            <li class="breadcrumb-item active">Data Siswa</li>
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active">Video Pembelajaran</li>
           </ol>
         </div>
         <!-- /.col -->
@@ -34,7 +34,7 @@
           <div class="card">
             <div class="card-body">
               
-              <button class="btn bg-indigo mb-4 shadow-md" id="btn-create_siswa">tambah siswa</button>
+              <button class="btn bg-indigo mb-4 shadow-md" id="btn-create_video_pembelajaran">tambah video</button>
               
               <div class="table-responsive">
                 
@@ -43,19 +43,21 @@
                   <thead class="bg-navy text-center text-nowrap text-uppercase">
                     <tr>
                       <th scope="col">no</th>
-                      <th scope="col">nama lengkap</th>
-                      <th scope="col">nis/nisn</th>
-                      <th scope="col">jenkel</th>
-                      <th scope="col">aksi</th>
+                      <th scope="col">Judul Video</th>
+                      <th scope="col">Thumbnail</th>
+                      <th scope="col">Aksi</th>
                     </tr>
                   </thead>
                   
                   <tbody>
                     <tr>
                       <th class="align-middle text-center" scope="row">1</th>
-                      <td class="align-middle">Nova Ardiansyah</td>
-                      <td class="align-middle">103/RPL/2017</td>
-                      <td class="align-middle">Laki-Laki</td>
+                      <td class="align-middle">Mengenal Jaringan Komputer LAN (Local Area Network)</td>
+                      <td class="align-middle">
+                        <img src="https://i.ytimg.com/vi/OXyweS45dy4/sddefault.jpg" 
+                        class="img-thumbnail" alt="mengenal jaringan lan"
+                        data-video_id="OXyweS45dy4">
+                      </td>
                       <td class="text-nowrap align-middle">
                         <button class="btn bg-indigo d-inline btn-detail_siswa">
                           <i class="fa fa-fw fa-eye"></i>
