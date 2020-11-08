@@ -27,6 +27,14 @@
             </p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="/admin/video-pembelajaran" class="nav-link <?= $menu === 'video pembelajaran' ? 'active' : '' ?>">
+            <i class="nav-icon fab fa-fw fa-youtube align-middle"></i>
+            <p>
+              Video Pembelajaran
+            </p>
+          </a>
+        </li>
         <!-- <li class="nav-item has-treeview">
           <a href="#" class="nav-link">
             <i class="nav-icon far fa-envelope"></i>
