@@ -1,9 +1,9 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar bg-navy elevation-4">
   
-  <a href="index3.html" class="brand-link d-flex justify-content-center">
-    <img src="/image/belajar-yuk-logo.png" alt="AdminLTE Logo" class="brand-image elevation-3" style="width: 33px !important">
-    <span class="brand-text font-weight-light align-middle">Belajar Yuk</span>
+  <a href="/" class="brand-link d-flex justify-content-center">
+    <img src="/image/belajar-yuk-logo.png" alt="Belajar Yuk Logo" class="brand-image elevation-3 mr-0" style="width: 33px !important">
+    <span class="brand-text font-weight-light align-middle ml-0 h5">Belajar Yuk</span>
   </a>
   
   <!-- Sidebar -->

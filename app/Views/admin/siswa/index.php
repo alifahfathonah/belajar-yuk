@@ -88,6 +88,39 @@
             </div>
             <div class="card-body">
               <canvas id="chart-data_siswa" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+              
+              <h5 class="mt-3">keterangan:</h5>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <i class="fa fa-fw fa-square mr-1" style="color: #f56954"></i> 
+                  Rekayasa Perangkat Lunak
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-fw fa-square mr-1" style="color: #00a65a"></i> 
+                  Teknik Komputer dan Jaringan
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-fw fa-square mr-1" style="color: #f39c12"></i> 
+                  Teknik Kendaraan Ringan
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-fw fa-square mr-1" style="color: #00c0ef"></i> 
+                  Desain Pemodelan
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-fw fa-square mr-1" style="color: #3c8dbc"></i> 
+                  Teknik Pendingin dan Tata Udara
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-fw fa-square mr-1" style="color: #d2d6de"></i> 
+                  Teknik Jaringan Tenaga Listrik
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-fw fa-square mr-1" style="color: #c678db"></i> 
+                  Bisnis Konstruksi dan Properti
+                </li>
+              </ul>
+              
             </div>
             <!-- /.card-body -->
           </div>

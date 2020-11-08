@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // work on line 344
   const dateRangePicker = (target = '.dateRangePicker') => {
     // max age = 40 years old
     // min age = 18 years old
@@ -322,17 +323,33 @@ $(document).ready(function() {
   let data_siswa = {
     labels: [
       'RPL', 
-      'DP',
       'TKJ', 
       'TKR', 
-      'Listrik', 
-      'AC',
-      'Pertanian'
+      'DP',
+      'TPTU',
+      'TJTL',
+      'BKP'
     ],
     datasets: [
       {
-        data: [125,100,79,90,80,65,95],
-        backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de','#c678db'],
+        data: [
+          130,
+          100,
+          84,
+          97,
+          110,
+          135,
+          90
+        ],
+        backgroundColor : [
+          '#f56954', 
+          '#00a65a', 
+          '#f39c12', 
+          '#00c0ef', 
+          '#3c8dbc', 
+          '#d2d6de',
+          '#c678db'
+        ],
       }
     ]
   }
