@@ -1,11 +1,21 @@
 $(document).ready(function() {
+  const showModal = (target = '#staticModal') => {
+    $(target).modal({ keyboard: false, backdrop: 'static' });
+  }
+  
+  const setupModal = (modal, label, bgHeader, body) => {
+    let newModal    = modal !== null ? modal : '#staticModal';
+    let newBgHeader = bgHeader !== null ? bgHeader : 'bg-indigo';
+    
+    $(`${newModal}Label`).html(label);
+    $('.modal-header').toggleClass(newBgHeader);
+    $('.modal-body').html(body);
+  }
+  
   // Modal Create Video Pembelajaran
   $('.container-fluid').on('click','#btn-create-video_pembelajaran', (e) => {
     e.preventDefault();
-    
-    $('#staticModalLabel').html(`tambah video pembelajaran`);
-    $('.modal-header').addClass('bg-indigo');
-    $('.modal-body').html(`
+    setupModal(null, `tambah video pembelajaran`, null, `
       <form action="/admin/video-pembelajaran/create" method="post" id="form-create-video_pembelajaran">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -35,7 +45,7 @@ $(document).ready(function() {
       </form>
     `);
     
-    $('#staticModal').modal({ keyboard: false, backdrop: 'static' });
+    showModal();
   });
   
   // Modal Detail Video Pembelajaran
