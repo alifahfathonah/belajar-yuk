@@ -23,7 +23,7 @@ $(document).ready(function() {
   // Modal Create Siswa
   $('.container-fluid').on('click','#btn-create_siswa', (e) => {
     $('#staticModalLabel').html(`tambah data siswa/i`);
-    $('.modal-header').removeClass('bg-navy').addClass('bg-indigo');
+    $('.modal-header').addClass('bg-indigo');
     $('.modal-body').html(`
       <form action="/admin/siswa/create" method="post" id="form-create_siswa">
         <div class="input-group mb-3">

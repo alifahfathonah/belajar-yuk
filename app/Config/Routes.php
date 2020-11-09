@@ -32,6 +32,16 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+$routes->group('admin', function($routes) {
+  $routes->group('siswa', function($routes) {
+    $routes->get('/', 'Admin\Siswa::index');
+  });
+  
+  $routes->group('video-pembelajaran', function($routes) {
+    $routes->get('/', 'Admin\VideoPembelajaran::index');
+  });
+});
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

@@ -34,7 +34,7 @@
           <div class="card">
             <div class="card-body">
               
-              <button class="btn bg-indigo mb-4 shadow-md" id="btn-create_video_pembelajaran">tambah video</button>
+              <button class="btn bg-indigo mb-4 shadow-md" id="btn-create-video_pembelajaran">tambah video</button>
               
               <div class="table-responsive">
                 
@@ -59,7 +59,7 @@
                         data-video_id="OXyweS45dy4">
                       </td>
                       <td class="text-nowrap align-middle">
-                        <button class="btn bg-indigo d-inline btn-detail_siswa">
+                        <button class="btn bg-indigo d-inline btn-detail_video_pembelajaran">
                           <i class="fa fa-fw fa-eye"></i>
                           detail
                         </button>
@@ -82,47 +82,14 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header bg-navy">
-              <h3 class="card-title">statistik data siswa/i</h3>
+              <h3 class="card-title">statistik video pembelajaran</h3>
 
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
               </div>
             </div>
             <div class="card-body">
-              <canvas id="chart-data_siswa" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-              
-              <h5 class="mt-3">keterangan:</h5>
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <i class="fa fa-fw fa-square mr-1" style="color: #f56954"></i> 
-                  Rekayasa Perangkat Lunak
-                </li>
-                <li class="list-group-item">
-                  <i class="fa fa-fw fa-square mr-1" style="color: #00a65a"></i> 
-                  Teknik Komputer dan Jaringan
-                </li>
-                <li class="list-group-item">
-                  <i class="fa fa-fw fa-square mr-1" style="color: #f39c12"></i> 
-                  Teknik Kendaraan Ringan
-                </li>
-                <li class="list-group-item">
-                  <i class="fa fa-fw fa-square mr-1" style="color: #00c0ef"></i> 
-                  Desain Pemodelan
-                </li>
-                <li class="list-group-item">
-                  <i class="fa fa-fw fa-square mr-1" style="color: #3c8dbc"></i> 
-                  Teknik Pendingin dan Tata Udara
-                </li>
-                <li class="list-group-item">
-                  <i class="fa fa-fw fa-square mr-1" style="color: #d2d6de"></i> 
-                  Teknik Jaringan Tenaga Listrik
-                </li>
-                <li class="list-group-item">
-                  <i class="fa fa-fw fa-square mr-1" style="color: #c678db"></i> 
-                  Bisnis Konstruksi dan Properti
-                </li>
-              </ul>
-              
+              <canvas id="chart-video_pembelajaran" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
             </div>
             <!-- /.card-body -->
           </div>
@@ -163,5 +130,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('script') ?>
-<script src="/js/siswa/index.js"></script>
+<script src="/js/admin/video-pembelajaran/index.js"></script>
 <?= $this->endSection() ?>

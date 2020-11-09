@@ -161,5 +161,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('script') ?>
-<script src="/js/siswa/index.js"></script>
+<script src="/js/admin/siswa/index.js"></script>
 <?= $this->endSection() ?>
