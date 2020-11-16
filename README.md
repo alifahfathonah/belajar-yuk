@@ -26,12 +26,18 @@ You can contribute to this site by submitting pull request.
 
 ### Status
 <p>
-  <img src="https://img.shields.io/badge/Stages-development-informational">
+  <img src="https://img.shields.io/badge/stages-development-informational">
+  <a href="https://github.com/novaardiansyah1/belajar-yuk/blob/master/references.json">
+    <img src="https://img.shields.io/badge/information-references-informational">
+  </a>
+  <a href="https://github.com/novaardiansyah1/belajar-yuk/blob/master/references.json">
+    <img src="https://img.shields.io/badge/information-references-informational">
+  </a>
+  <img src="https://img.shields.io/github/repo-size/novaardiansyah1/belajar-yuk?label=size&color=informational" />
   <a href="https://github.com/novaardiansyah1/belajar-yuk/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-informational">
+    <img src="https://img.shields.io/github/license/novaardiansyah1/belajar-yuk?label=license&color=informational" />
   </a>
   <a href="https://github.com/novaardiansyah1/belajar-yuk/commits/master">
     <img src="https://img.shields.io/github/last-commit/novaardiansyah1/belajar-yuk/master?color=informational" />
   </a>
-  <img src="https://img.shields.io/github/repo-size/novaardiansyah1/belajar-yuk?label=Size&color=informational" />
 </p>
