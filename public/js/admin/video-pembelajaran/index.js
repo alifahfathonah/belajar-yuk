@@ -3,12 +3,9 @@ $(document).ready(function() {
     $(target).modal({ keyboard: false, backdrop: 'static' });
   }
   
-  const setupModal = (modal, label, bgHeader, body) => {
-    let newModal    = modal !== null ? modal : '#staticModal';
-    let newBgHeader = bgHeader !== null ? bgHeader : 'bg-indigo';
-    
-    $(`${newModal}Label`).html(label);
-    $('.modal-header').toggleClass(newBgHeader);
+  const setupModal = (modal, label, background, body) => {
+    $(modal ? `${modal}Label` : `#staticModalLabel`).html(label);
+    $('.modal-header').addClass(background ? background : 'bg-indigo');
     $('.modal-body').html(body);
   }
   
@@ -44,7 +41,6 @@ $(document).ready(function() {
         </div>
       </form>
     `);
-    
     showModal();
   });
   
