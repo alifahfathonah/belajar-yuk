@@ -56,10 +56,10 @@
                       <td class="align-middle">
                         <img src="https://i.ytimg.com/vi/OXyweS45dy4/sddefault.jpg" 
                         class="img-thumbnail" alt="mengenal jaringan lan"
-                        data-video_id="OXyweS45dy4">
+                        data-video_id="OXyweS45dy4" />
                       </td>
                       <td class="text-nowrap align-middle">
-                        <button class="btn bg-indigo d-inline btn-detail_video_pembelajaran">
+                        <button class="btn bg-indigo d-inline btn-detail-video_pembelajaran">
                           <i class="fa fa-fw fa-eye"></i>
                           detail
                         </button>

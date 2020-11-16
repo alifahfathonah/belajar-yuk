@@ -5,8 +5,8 @@ $(document).ready(function() {
   
   const setupModal = (modal, label, background, body) => {
     $(modal ? `${modal}Label` : `#staticModalLabel`).html(label);
-    $('.modal-header').addClass(background ? background : 'bg-indigo');
-    $('.modal-body').html(body);
+    $('.modal-header').toggleClass(background ? background : 'bg-indigo');
+    $('.modal-body').html(body ? body : $('.modal-body').html());
   }
   
   // Modal Create Video Pembelajaran
@@ -28,6 +28,13 @@ $(document).ready(function() {
           <input type="text" class="form-control" placeholder="url/link video" name="url">
         </div>
         <!-- /.input-group -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-fw fa-pen"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="catatan (opsional)" name="catatan">
+        </div>
+        <!-- /.input-group -->
         
         <div class="text-right text-nowrap">
           <button type="button" class="btn text-navy d-inline btn-close_modal">
@@ -46,7 +53,72 @@ $(document).ready(function() {
   
   // Modal Detail Video Pembelajaran
   $('.container-fluid').on('click','.btn-detail-video_pembelajaran', (e) => {
-    
+    e.preventDefault();
+    setupModal(null, 'detail video pembelajaran', null, `
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-5 text-nowrap text-right">Judul Video:</div>
+            <div class="col">Mengenal Jaringan Komputer LAN (Local Area Network)</div>
+          </div>
+        </li>
+        <!-- /.list-group-item -->
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-5 text-nowrap text-right">Channel:</div>
+            <div class="col">Surya S.Kom, Gr</div>
+          </div>
+        </li>
+        <!-- /.list-group-item -->
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-5 text-nowrap text-right">Catatan:</div>
+            <div class="col">Setelah menonton videonya harap konfirmasi 
+            kepada guru pembimbing, untuk mengerjakan soal latihan.</div>
+          </div>
+        </li>
+        <!-- /.list-group-item -->
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-5 text-nowrap text-right">Thumbnail:</div>
+            <div class="col">
+              <img 
+                src="https://i.ytimg.com/vi/OXyweS45dy4/sddefault.jpg" 
+                class="img-thumbnail" width="100"
+                alt="mengenal jaringan lan"
+              />
+            </div>
+          </div>
+        </li>
+        <!-- /.list-group-item -->
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-5 text-nowrap text-right">Created At:</div>
+            <div class="col">16 November 2020</div>
+          </div>
+        </li>
+        <!-- /.list-group-item -->
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-5 text-nowrap text-right">Updated At:</div>
+            <div class="col">16 November 2020</div>
+          </div>
+        </li>
+        <!-- /.list-group-item -->
+      </ul>
+      
+      <div class="text-right mt-3">
+        <button type="button" class="btn bg-navy btn-update_siswa">
+          <i class="fa fa-fw fa-edit"></i>
+          edit
+        </button>
+        <button type="button" class="btn btn-danger btn-delete_siswa">
+          <i class="fa fa-fw fa-trash-alt"></i>
+          hapus
+        </button>
+      </div>
+    `);
+    showModal();
   });
   
   // Modal Update Video Pembelajaran 
@@ -62,13 +134,13 @@ $(document).ready(function() {
   // Chart Data Siswa
   let data_siswa = {
     labels: [
-      'RPL', 
-      'TKJ', 
-      'TKR', 
-      'DP',
-      'TPTU',
-      'TJTL',
-      'BKP'
+      'PAI', 
+      'Bahasa Inggris', 
+      'Sastra', 
+      'Seni Budaya',
+      'Matematika',
+      'Biologi',
+      'Fisika'
     ],
     datasets: [
       {
