@@ -1,6 +1,5 @@
 $(document).ready(function() {
-  // work on line 344
-  const dateRangePicker = (target = '.dateRangePicker') => {
+  const dateRangePicker = (target) => {
     // max age = 40 years old
     // min age = 18 years old
     let year    = new Date().getFullYear();
@@ -20,11 +19,22 @@ $(document).ready(function() {
     });
   }
   
+  const showModal = (target = '#staticModal') => {
+    $(target).modal({ keyboard: false, backdrop: 'static' });
+    
+    $('select') && $('select').select2({ theme: 'bootstrap4' });
+    $('.dateRangePicker') && dateRangePicker('.dateRangePicker')
+  }
+  
+  const setupModal = (modal, label, background, body) => {
+    $(modal ? `${modal}Label` : `#staticModalLabel`).html(label);
+    $('.modal-header').attr('class', background ? `modal-header ${background}` : 'modal-header bg-indigo');
+    $('.modal-body').html(body ? body : $('.modal-body').html());
+  }
+  
   // Modal Create Siswa
   $('.container-fluid').on('click','#btn-create_siswa', (e) => {
-    $('#staticModalLabel').html(`tambah data siswa/i`);
-    $('.modal-header').addClass('bg-indigo');
-    $('.modal-body').html(`
+    setupModal(null, 'tambah data siswa/i', null, `
       <form action="/admin/siswa/create" method="post" id="form-create_siswa">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -119,17 +129,12 @@ $(document).ready(function() {
         </div>
       </form>
     `);
-    
-    $('#staticModal').modal({ keyboard: false, backdrop: 'static' });
-    $('select').select2({ theme: 'bootstrap4' });
-    dateRangePicker();
+    showModal();
   });
   
   // Modal Detail Siswa
   $('.container-fluid').on('click','.btn-detail_siswa', (e) => {
-    $('#staticModalLabel').html(`detail data siswa/i`);
-    $('.modal-header').removeClass('bg-navy').addClass('bg-indigo');
-    $('.modal-body').html(`
+    setupModal(null, 'detail data siswa/i', 'bg-indigo', `
       <ul class="list-group">
         <li class="list-group-item">
           <div class="row">
@@ -207,15 +212,12 @@ $(document).ready(function() {
         </button>
       </div>
     `);
-    
-    $('#staticModal').modal({ keyboard: false, backdrop: 'static' });
+    showModal();
   });
   
   // Modal Update Siswa 
   $('.container-fluid').on('click','.btn-update_siswa', (e) => {
-    $('#staticModalLabel').html(`perbarui data siswa/i`);
-    $('.modal-header').removeClass('bg-indigo').addClass('bg-navy');
-    $('.modal-body').html(`
+    setupModal(null, 'perbarui data siswa/i', 'bg-navy', `
       <form action="/admin/siswa/update" method="post" id="form-update_siswa">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -309,9 +311,7 @@ $(document).ready(function() {
         </div>
       </form>
     `);
-    
-    $('select').select2({ theme: 'bootstrap4' });
-    dateRangePicker();
+    showModal();
   });
   
   $('.container-fluid').on('click','.btn-close_modal', (e) => {

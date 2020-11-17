@@ -1,14 +1,37 @@
 $(document).ready(function() {
+  const dateRangePicker = (target) => {
+    // max age = 40 years old
+    // min age = 18 years old
+    let year    = new Date().getFullYear();
+    let minYear = parseInt(year - 40);
+    let maxYear = parseInt(year - 18);
+    
+    $(target).daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true,
+      minYear: minYear,
+      maxYear: maxYear,
+      opens: 'center',
+      drops: 'up',
+      locale: {
+        format: 'DD/MM/YYYY'
+      },
+    });
+  }
+  
   const showModal = (target = '#staticModal') => {
     $(target).modal({ keyboard: false, backdrop: 'static' });
+    
+    $('select') && $('select').select2({ theme: 'bootstrap4' });
+    $('.dateRangePicker') && dateRangePicker('.dateRangePicker')
   }
   
   const setupModal = (modal, label, background, body) => {
     $(modal ? `${modal}Label` : `#staticModalLabel`).html(label);
-    $('.modal-header').toggleClass(background ? background : 'bg-indigo');
+    $('.modal-header').attr('class', background ? `modal-header ${background}` : 'modal-header bg-indigo');
     $('.modal-body').html(body ? body : $('.modal-body').html());
   }
-  
+
   // Modal Create Video Pembelajaran
   $('.container-fluid').on('click','#btn-create-video_pembelajaran', (e) => {
     e.preventDefault();

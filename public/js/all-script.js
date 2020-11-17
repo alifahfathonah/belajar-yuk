@@ -26,7 +26,7 @@ $(document).ready(function() {
   }
   
   // dateRangePicker
-  const dateRangePicker = (target = '.dateRangePicker') => {
+  const dateRangePicker = (target) => {
     // max age = 40 years old
     // min age = 18 years old
     let year    = new Date().getFullYear();
@@ -45,9 +45,7 @@ $(document).ready(function() {
       },
     });
   }
-  
-  $('.dateRangePicker') && dateRangePicker();
-  
+  $('.dateRangePicker') && dateRangePicker('.dateRangePicker');
   $('.summernote') && $('.summernote').summernote();
 });
 /* +================================================++================================================++================================================++================================================+ */
