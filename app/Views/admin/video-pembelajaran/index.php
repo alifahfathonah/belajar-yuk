@@ -33,8 +33,18 @@
           
           <div class="card">
             <div class="card-body">
-              
-              <button class="btn bg-indigo mb-4 shadow-md" id="btn-create-video_pembelajaran">tambah video</button>
+              <div class="text-right mb-4 mt-2">
+                <div class="btn-group" role="group">
+                  <button class="btn bg-indigo shadow-md" id="btn-print-video_pembelajaran">
+                    <i class="fa fa-fw fa-print align-middle"></i>
+                    print
+                  </button>
+                  <button class="btn bg-indigo shadow-md" id="btn-create-video_pembelajaran">
+                    <i class="fa fa-fw fa-save align-middle"></i>
+                    tambah
+                  </button>
+                </div>
+              </div>
               
               <div class="table-responsive">
                 
